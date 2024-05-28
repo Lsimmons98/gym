@@ -1,6 +1,5 @@
 {
-  "exercises":
-  [
+  "exercises": [
   {
     "exercise_id": 1,
     "exercise_name": "Barbell Curl",
@@ -324,6 +323,5 @@
     "category": "Compound",
     "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
     "instructions": "Stand with feet together, step forward with one foot and lower your body until both knees are bent at 90-degree angles. Push back up to the starting position and repeat with the other leg."
-  }
-      ]
-    }
+   }]
+}
