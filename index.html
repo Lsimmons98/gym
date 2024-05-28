@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise Selection Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>What Are We Hitting Today?</h1>
+    <form id="exercise-form">
+      <label for="exercise">Select an exercise:</label>
+      <select name="exercise" id="exercise">
+        <option value ='Chest'>Chest</option>
+        <option value='Back'>Back</option>
+        <option value='Shoulders'>Shoulders</option>
+        <option value='Legs'>Legs</option>
+        <option value='Triceps'>Triceps</option>
+        <option value='Biceps'>Biceps</option>
+        <option value='Abs'>Abs</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="searched-exercises">
+    <h2 id="muscle-group-title">''</h2>
+  </div>
+  <div id="all-exercises">
+    <h2>All Exercises</h2>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
