@@ -1,327 +1,328 @@
 {
   "exercises": [
-  {
-    "exercise_id": 1,
-    "exercise_name": "Barbell Curl",
-    "muscle_group": "Biceps",
-    "sub_group": "Long Head",
-    "category": "Isolation",
-    "image": "BICEPURL",
-    "instructions": "Stand up straight holding a barbell with an underhand grip, arms extended down. Curl the bar up towards your shoulders, keeping your elbows close to your body. Lower the bar back down to the starting position."
-  },
-  {
-    "exercise_id": 2,
-    "exercise_name": "Bench Press",
-    "muscle_group": "Chest",
-    "sub_group": "Upper",
-    "category": "Compound",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
-    "instructions": "Lie on a flat bench with a barbell grasped in both hands, arms extended over your chest. Lower the bar to your chest, then press it back up to the starting position."
-  },
-  {
-    "exercise_id": 3,
-    "exercise_name": "Deadlift",
-    "muscle_group": "Back",
-    "sub_group": "Lats",
-    "category": "Compound",
-    "image": "BACKURL",
-    "instructions": "Stand with feet shoulder-width apart, bend at the waist to grip the barbell. Lift the bar by extending your hips and knees, keeping your back straight. Lower the bar back down to the ground."
-  },
-  {
-    "exercise_id": 4,
-    "exercise_name": "Squats",
-    "muscle_group": "Legs",
-    "sub_group": "Quadriceps",
-    "category": "Compound",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Stand with feet shoulder-width apart, squat down by bending your knees and hips. Keep your back straight and chest up. Return to the starting position by extending your hips and knees."
-  },
-  {
-    "exercise_id": 5,
-    "exercise_name": "Tricep Dips",
-    "muscle_group": "Triceps",
-    "sub_group": "Medial Head",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Hold onto parallel bars with arms extended, lower your body by bending your elbows until your upper arms are parallel to the ground. Push yourself back up to the starting position."
-  },
-  {
-    "exercise_id": 6,
-    "exercise_name": "Russian Twists",
-    "muscle_group": "Abs",
-    "sub_group": "Obliques",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
-    "instructions": "Sit on the floor, knees bent and feet elevated. Lean back slightly and twist your torso to one side, then to the other side. Repeat for the desired number of reps."
-  },
-  {
-    "exercise_id": 7,
-    "exercise_name": "Pull-ups",
-    "muscle_group": "Back",
-    "sub_group": "Lats",
-    "category": "Compound",
-    "image": "BACKURL",
-    "instructions": "Hang from a pull-up bar with hands slightly wider than shoulder-width apart, palms facing away. Pull yourself up until your chin is above the bar, then lower yourself back down."
-  },
-  {
-    "exercise_id": 8,
-    "exercise_name": "Dumbbell Flyes",
-    "muscle_group": "Chest",
-    "sub_group": "Mid",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
-    "instructions": "Lie on a flat bench with a dumbbell in each hand, palms facing inward. Extend your arms above your chest, then lower the dumbbells out to the sides in a wide arc. Return to the starting position."
-  },
-  {
-    "exercise_id": 9,
-    "exercise_name": "Leg Press",
-    "muscle_group": "Legs",
-    "sub_group": "Glutes",
-    "category": "Compound",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Sit on the leg press machine with your feet on the platform, shoulder-width apart. Push the platform away by extending your knees and hips, then lower it back down."
-  },
-  {
-    "exercise_id": 10,
-    "exercise_name": "Skull Crushers",
-    "muscle_group": "Triceps",
-    "sub_group": "Lateral Head",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Lie on a flat bench with a barbell or dumbbells in your hands, arms extended over your chest. Lower the weight by bending your elbows, keeping them in line with your shoulders. Extend your arms to lift the weight back up."
-  },
-  {
-    "exercise_id": 11,
-    "exercise_name": "Plank",
-    "muscle_group": "Abs",
-    "sub_group": "Rectus Abdominis",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
-    "instructions": "Start in a push-up position, then lower yourself onto your forearms. Keep your body in a straight line from head to heels, engage your core, and hold the position for the desired duration."
-  },
-  {
-    "exercise_id": 12,
-    "exercise_name": "Barbell Row",
-    "muscle_group": "Back",
-    "sub_group": "Mid Back",
-    "category": "Compound",
-    "image": "BACKURL",
-    "instructions": "Bend at the waist to grasp a barbell with an overhand grip, hands slightly wider than shoulder-width apart. Pull the bar towards your lower chest, squeezing your shoulder blades together. Lower the bar back down."
-  },
-  {
-    "exercise_id": 13,
-    "exercise_name": "Lunges",
-    "muscle_group": "Legs",
-    "sub_group": "Hamstrings",
-    "category": "Compound",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Stand with feet hip-width apart, step forward with one leg and lower your body until both knees are bent at 90-degree angles. Push back up to the starting position and repeat with the other leg."
-  },
-  {
-    "exercise_id": 14,
-    "exercise_name": "Tricep Kickbacks",
-    "muscle_group": "Triceps",
-    "sub_group": "Long Head",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Hold a dumbbell in each hand, bend your knees slightly, hinge forward at the hips, and bring your elbows up so your upper arms are parallel to the ground. Extend your arms straight back"
-  },
     {
-    "exercise_id": 15,
-    "exercise_name": "Sit-ups",
-    "muscle_group": "Abs",
-    "sub_group": "Rectus Abdominis",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
-    "instructions": "Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or crossed over your chest. Engage your core muscles to lift your torso off the floor towards your thighs, then slowly lower back down."
-  },
-  {
-    "exercise_id": 16,
-    "exercise_name": "Hammer Curls",
-    "muscle_group": "Biceps",
-    "sub_group": "Brachialis",
-    "category": "Isolation",
-    "image": "BICEPURL",
-    "instructions": "Stand up straight holding a dumbbell in each hand, palms facing your torso. Keeping your elbows close to your body, curl the dumbbells up towards your shoulders. Lower the dumbbells back down to the starting position."
-  },
-  {
-    "exercise_id": 17,
-    "exercise_name": "Incline Bench Press",
-    "muscle_group": "Chest",
-    "sub_group": "Upper",
-    "category": "Compound",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
-    "instructions": "Lie on an incline bench with a barbell grasped in both hands, arms extended over your chest. Lower the bar to your upper chest, then press it back up to the starting position."
-  },
-  {
-    "exercise_id": 18,
-    "exercise_name": "Bent Over Rows",
-    "muscle_group": "Back",
-    "sub_group": "Traps",
-    "category": "Compound",
-    "image": "BACKURL",
-    "instructions": "Stand with feet shoulder-width apart, knees slightly bent, and hold a barbell with an overhand grip. Bend at the waist and lower your torso until it's almost parallel to the floor. Pull the barbell towards your lower chest, then lower it back down."
-  },
-  {
-    "exercise_id": 19,
-    "exercise_name": "Leg Curls",
-    "muscle_group": "Legs",
-    "sub_group": "Hamstrings",
-    "category": "Isolation",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Lie face down on a leg curl machine with your legs straight. Curl your legs up towards your glutes by bending your knees, then lower them back down to the starting position."
-  },
-  {
-    "exercise_id": 20,
-    "exercise_name": "Close Grip Bench Press",
-    "muscle_group": "Triceps",
-    "sub_group": "Medial Head",
-    "category": "Compound",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Lie on a flat bench with a barbell grasped in both hands, hands positioned closer than shoulder-width apart. Lower the bar to your chest, then press it back up to the starting position."
-  },
-  {
-    "exercise_id": 21,
-    "exercise_name": "Leg Raises",
-    "muscle_group": "Abs",
-    "sub_group": "Lower Abs",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
-    "instructions": "Lie on your back with your legs straight. Lift your legs off the ground, keeping them straight, until they form a 90-degree angle with your torso. Lower your legs back down slowly without letting them touch the ground."
-  },
-  {
-    "exercise_id": 22,
-    "exercise_name": "Lat Pulldowns",
-    "muscle_group": "Back",
-    "sub_group": "Lats",
-    "category": "Isolation",
-    "image": "BACKURL",
-    "instructions": "Sit on a lat pulldown machine with your knees braced under the pads. Grasp the bar with an overhand grip wider than shoulder-width apart. Pull the bar down to your chest, then slowly release it back up."
-  },
-  {
-    "exercise_id": 23,
-    "exercise_name": "Step-ups",
-    "muscle_group": "Legs",
-    "sub_group": "Quadriceps",
-    "category": "Compound",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Stand in front of a bench or step. Step onto the bench with one foot, then bring the other foot up to meet it. Step back down with the same foot, then repeat on the other side."
-  },
-  {
-    "exercise_id": 24,
-    "exercise_name": "Skater Hops",
-    "muscle_group": "Legs",
-    "sub_group": "Glutes",
-    "category": "Isolation",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Start in a small squat position. Jump sideways to the right, landing on your right leg and swinging your left leg behind you. Immediately jump to the left, reversing the movement."
-  },
-  {
-    "exercise_id": 25,
-    "exercise_name": "Diamond Push-ups",
-    "muscle_group": "Triceps",
-    "sub_group": "Medial Head",
-    "category": "Compound",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Get into a push-up position with your hands close together, forming a diamond shape with your index fingers and thumbs. Lower your chest towards your hands, then press back up to the starting position."
-  },
-  {
-    "exercise_id": 27,
-    "exercise_name": "Concentration Curls",
-    "muscle_group": "Biceps",
-    "sub_group": "Short Head",
-    "category": "Isolation",
-    "image": "BICEPURL",
-    "instructions": "Sit on a bench with your legs spread apart. Hold a dumbbell with one hand, place the back of your upper arm against your inner thigh, and fully extend your arm. Curl the dumbbell up towards your shoulder, then lower it back down."
-  },
-  {
-    "exercise_id": 28,
-    "exercise_name": "Push-ups",
-    "muscle_group": "Chest",
-    "sub_group": "Lower",
-    "category": "Compound",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
-    "instructions": "Assume a plank position with your hands slightly wider than shoulder-width apart. Lower your body until your chest nearly touches the ground, then push back up to the starting position."
-  },
-  {
-    "exercise_id": 29,
-    "exercise_name": "One-Arm Dumbbell Rows",
-    "muscle_group": "Back",
-    "sub_group": "Mid Back",
-    "category": "Isolation",
-    "image": "BACKURL",
-    "instructions": "Place one knee and hand on a flat bench, holding a dumbbell in the opposite hand with your arm fully extended. Pull the dumbbell up towards your hip, then lower it back down."
-  },
-  {
-    "exercise_id": 30,
-    "exercise_name": "Romanian Deadlifts",
-    "muscle_group": "Legs",
-    "sub_group": "Hamstrings",
-    "category": "Compound",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Stand with feet hip-width apart, holding a barbell with an overhand grip in front of your thighs. Hinge at the hips, lowering the barbell towards the ground while keeping your back straight. Stand back up by squeezing your glutes."
-  },
-  {
-    "exercise_id": 31,
-    "exercise_name": "Tricep Rope Pushdowns",
-    "muscle_group": "Triceps",
-    "sub_group": "Lateral Head",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Attach a rope to a high pulley and grasp it with both hands. Keep your elbows close to your sides as you extend your arms downward, then return to the starting position."
-  },
-  {
-    "exercise_id": 32,
-    "exercise_name": "Flutter Kicks",
-    "muscle_group": "Abs",
-    "sub_group": "Lower Abs",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
-    "instructions": "Lie on your back with your hands under your glutes for support. Lift your legs off the ground, keeping them straight, and flutter them up and down in a controlled motion."
-  },
-  {
-    "exercise_id": 34,
-    "exercise_name": "Leg Extensions",
-    "muscle_group": "Legs",
-    "sub_group": "Quadriceps",
-    "category": "Isolation",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Sit on a leg extension machine with your ankles behind the pad, and adjust the pad so it rests on your lower shins. Extend your legs until they are straight, then return to the starting position."
-  },
-  {
-    "exercise_id": 35,
-    "exercise_name": "Tricep Overhead Extension",
-    "muscle_group": "Triceps",
-    "sub_group": "Long Head",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
-    "instructions": "Hold a dumbbell or barbell overhead with both hands, elbows bent. Extend your arms upward until they are straight, then lower the weight behind your head by bending your elbows."
-  },
-  {
-    "exercise_id": 36,
-    "exercise_name": "Mountain Climbers",
-    "muscle_group": "Abs",
-    "sub_group": "Obliques",
-    "category": "Isolation",
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
-    "instructions": "Assume a push-up position, then bring one knee towards your chest while keeping your other leg extended. Quickly switch legs, bringing the other knee towards your chest. Continue alternating legs in a running motion."
-  },
-  {
-    "exercise_id": 37,
-    "exercise_name": "Seated Cable Rows",
-    "muscle_group": "Back",
-    "sub_group": "Lats",
-    "category": "Isolation",
-    "image": "BACKURL",
-    "instructions": "Sit on a seated row machine with your knees slightly bent and feet braced against the footplate. Grasp the handles with an overhand grip, then pull them towards your lower chest, squeezing your shoulder blades together."
-  },
-  {
-    "exercise_id": 38,
-    "exercise_name": "Walking Lunges",
-    "muscle_group": "Legs",
-    "sub_group": "Glutes",
-    "category": "Compound",
-    "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
-    "instructions": "Stand with feet together, step forward with one foot and lower your body until both knees are bent at 90-degree angles. Push back up to the starting position and repeat with the other leg."
-   }]
+      "id": 1,
+      "exercise_name": "Barbell Curl",
+      "muscle_group": "Biceps",
+      "sub_group": "Long Head",
+      "category": "Isolation",
+      "image": "BICEPURL",
+      "instructions": "Stand up straight holding a barbell with an underhand grip, arms extended down. Curl the bar up towards your shoulders, keeping your elbows close to your body. Lower the bar back down to the starting position."
+    },
+    {
+      "id": 2,
+      "exercise_name": "Bench Press",
+      "muscle_group": "Chest",
+      "sub_group": "Upper",
+      "category": "Compound",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
+      "instructions": "Lie on a flat bench with a barbell grasped in both hands, arms extended over your chest. Lower the bar to your chest, then press it back up to the starting position."
+    },
+    {
+      "id": 3,
+      "exercise_name": "Deadlift",
+      "muscle_group": "Back",
+      "sub_group": "Lats",
+      "category": "Compound",
+      "image": "BACKURL",
+      "instructions": "Stand with feet shoulder-width apart, bend at the waist to grip the barbell. Lift the bar by extending your hips and knees, keeping your back straight. Lower the bar back down to the ground."
+    },
+    {
+      "id": 4,
+      "exercise_name": "Squats",
+      "muscle_group": "Legs",
+      "sub_group": "Quadriceps",
+      "category": "Compound",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Stand with feet shoulder-width apart, squat down by bending your knees and hips. Keep your back straight and chest up. Return to the starting position by extending your hips and knees."
+    },
+    {
+      "id": 5,
+      "exercise_name": "Tricep Dips",
+      "muscle_group": "Triceps",
+      "sub_group": "Medial Head",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Hold onto parallel bars with arms extended, lower your body by bending your elbows until your upper arms are parallel to the ground. Push yourself back up to the starting position."
+    },
+    {
+      "id": 6,
+      "exercise_name": "Russian Twists",
+      "muscle_group": "Abs",
+      "sub_group": "Obliques",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
+      "instructions": "Sit on the floor, knees bent and feet elevated. Lean back slightly and twist your torso to one side, then to the other side. Repeat for the desired number of reps."
+    },
+    {
+      "id": 7,
+      "exercise_name": "Pull-ups",
+      "muscle_group": "Back",
+      "sub_group": "Lats",
+      "category": "Compound",
+      "image": "BACKURL",
+      "instructions": "Hang from a pull-up bar with hands slightly wider than shoulder-width apart, palms facing away. Pull yourself up until your chin is above the bar, then lower yourself back down."
+    },
+    {
+      "id": 8,
+      "exercise_name": "Dumbbell Flyes",
+      "muscle_group": "Chest",
+      "sub_group": "Mid",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
+      "instructions": "Lie on a flat bench with a dumbbell in each hand, palms facing inward. Extend your arms above your chest, then lower the dumbbells out to the sides in a wide arc. Return to the starting position."
+    },
+    {
+      "id": 9,
+      "exercise_name": "Leg Press",
+      "muscle_group": "Legs",
+      "sub_group": "Glutes",
+      "category": "Compound",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Sit on the leg press machine with your feet on the platform, shoulder-width apart. Push the platform away by extending your knees and hips, then lower it back down."
+    },
+    {
+      "id": 10,
+      "exercise_name": "Skull Crushers",
+      "muscle_group": "Triceps",
+      "sub_group": "Lateral Head",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Lie on a flat bench with a barbell or dumbbells in your hands, arms extended over your chest. Lower the weight by bending your elbows, keeping them in line with your shoulders. Extend your arms to lift the weight back up."
+    },
+    {
+      "id": 11,
+      "exercise_name": "Plank",
+      "muscle_group": "Abs",
+      "sub_group": "Rectus Abdominis",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
+      "instructions": "Start in a push-up position, then lower yourself onto your forearms. Keep your body in a straight line from head to heels, engage your core, and hold the position for the desired duration."
+    },
+    {
+      "id": 12,
+      "exercise_name": "Barbell Row",
+      "muscle_group": "Back",
+      "sub_group": "Mid Back",
+      "category": "Compound",
+      "image": "BACKURL",
+      "instructions": "Bend at the waist to grasp a barbell with an overhand grip, hands slightly wider than shoulder-width apart. Pull the bar towards your lower chest, squeezing your shoulder blades together. Lower the bar back down."
+    },
+    {
+      "id": 13,
+      "exercise_name": "Lunges",
+      "muscle_group": "Legs",
+      "sub_group": "Hamstrings",
+      "category": "Compound",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Stand with feet hip-width apart, step forward with one leg and lower your body until both knees are bent at 90-degree angles. Push back up to the starting position and repeat with the other leg."
+    },
+    {
+      "id": 14,
+      "exercise_name": "Tricep Kickbacks",
+      "muscle_group": "Triceps",
+      "sub_group": "Long Head",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Hold a dumbbell in each hand, bend your knees slightly, hinge forward at the hips, and bring your elbows up so your upper arms are parallel to the ground. Extend your arms straight back"
+    },
+    {
+      "id": 15,
+      "exercise_name": "Sit-ups",
+      "muscle_group": "Abs",
+      "sub_group": "Rectus Abdominis",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
+      "instructions": "Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or crossed over your chest. Engage your core muscles to lift your torso off the floor towards your thighs, then slowly lower back down."
+    },
+    {
+      "id": 16,
+      "exercise_name": "Hammer Curls",
+      "muscle_group": "Biceps",
+      "sub_group": "Brachialis",
+      "category": "Isolation",
+      "image": "BICEPURL",
+      "instructions": "Stand up straight holding a dumbbell in each hand, palms facing your torso. Keeping your elbows close to your body, curl the dumbbells up towards your shoulders. Lower the dumbbells back down to the starting position."
+    },
+    {
+      "id": 17,
+      "exercise_name": "Incline Bench Press",
+      "muscle_group": "Chest",
+      "sub_group": "Upper",
+      "category": "Compound",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
+      "instructions": "Lie on an incline bench with a barbell grasped in both hands, arms extended over your chest. Lower the bar to your upper chest, then press it back up to the starting position."
+    },
+    {
+      "id": 18,
+      "exercise_name": "Bent Over Rows",
+      "muscle_group": "Back",
+      "sub_group": "Traps",
+      "category": "Compound",
+      "image": "BACKURL",
+      "instructions": "Stand with feet shoulder-width apart, knees slightly bent, and hold a barbell with an overhand grip. Bend at the waist and lower your torso until it's almost parallel to the floor. Pull the barbell towards your lower chest, then lower it back down."
+    },
+    {
+      "id": 19,
+      "exercise_name": "Leg Curls",
+      "muscle_group": "Legs",
+      "sub_group": "Hamstrings",
+      "category": "Isolation",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Lie face down on a leg curl machine with your legs straight. Curl your legs up towards your glutes by bending your knees, then lower them back down to the starting position."
+    },
+    {
+      "id": 20,
+      "exercise_name": "Close Grip Bench Press",
+      "muscle_group": "Triceps",
+      "sub_group": "Medial Head",
+      "category": "Compound",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Lie on a flat bench with a barbell grasped in both hands, hands positioned closer than shoulder-width apart. Lower the bar to your chest, then press it back up to the starting position."
+    },
+    {
+      "id": 21,
+      "exercise_name": "Leg Raises",
+      "muscle_group": "Abs",
+      "sub_group": "Lower Abs",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
+      "instructions": "Lie on your back with your legs straight. Lift your legs off the ground, keeping them straight, until they form a 90-degree angle with your torso. Lower your legs back down slowly without letting them touch the ground."
+    },
+    {
+      "id": 22,
+      "exercise_name": "Lat Pulldowns",
+      "muscle_group": "Back",
+      "sub_group": "Lats",
+      "category": "Isolation",
+      "image": "BACKURL",
+      "instructions": "Sit on a lat pulldown machine with your knees braced under the pads. Grasp the bar with an overhand grip wider than shoulder-width apart. Pull the bar down to your chest, then slowly release it back up."
+    },
+    {
+      "id": 23,
+      "exercise_name": "Step-ups",
+      "muscle_group": "Legs",
+      "sub_group": "Quadriceps",
+      "category": "Compound",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Stand in front of a bench or step. Step onto the bench with one foot, then bring the other foot up to meet it. Step back down with the same foot, then repeat on the other side."
+    },
+    {
+      "id": 24,
+      "exercise_name": "Skater Hops",
+      "muscle_group": "Legs",
+      "sub_group": "Glutes",
+      "category": "Isolation",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Start in a small squat position. Jump sideways to the right, landing on your right leg and swinging your left leg behind you. Immediately jump to the left, reversing the movement."
+    },
+    {
+      "id": 25,
+      "exercise_name": "Diamond Push-ups",
+      "muscle_group": "Triceps",
+      "sub_group": "Medial Head",
+      "category": "Compound",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Get into a push-up position with your hands close together, forming a diamond shape with your index fingers and thumbs. Lower your chest towards your hands, then press back up to the starting position."
+    },
+    {
+      "id": 27,
+      "exercise_name": "Concentration Curls",
+      "muscle_group": "Biceps",
+      "sub_group": "Short Head",
+      "category": "Isolation",
+      "image": "BICEPURL",
+      "instructions": "Sit on a bench with your legs spread apart. Hold a dumbbell with one hand, place the back of your upper arm against your inner thigh, and fully extend your arm. Curl the dumbbell up towards your shoulder, then lower it back down."
+    },
+    {
+      "id": 28,
+      "exercise_name": "Push-ups",
+      "muscle_group": "Chest",
+      "sub_group": "Lower",
+      "category": "Compound",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDPz0huxBr7J3p1vIRrgtjfVKdrUzr5vDng&s",
+      "instructions": "Assume a plank position with your hands slightly wider than shoulder-width apart. Lower your body until your chest nearly touches the ground, then push back up to the starting position."
+    },
+    {
+      "id": 29,
+      "exercise_name": "One-Arm Dumbbell Rows",
+      "muscle_group": "Back",
+      "sub_group": "Mid Back",
+      "category": "Isolation",
+      "image": "BACKURL",
+      "instructions": "Place one knee and hand on a flat bench, holding a dumbbell in the opposite hand with your arm fully extended. Pull the dumbbell up towards your hip, then lower it back down."
+    },
+    {
+      "id": 30,
+      "exercise_name": "Romanian Deadlifts",
+      "muscle_group": "Legs",
+      "sub_group": "Hamstrings",
+      "category": "Compound",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Stand with feet hip-width apart, holding a barbell with an overhand grip in front of your thighs. Hinge at the hips, lowering the barbell towards the ground while keeping your back straight. Stand back up by squeezing your glutes."
+    },
+    {
+      "id": 31,
+      "exercise_name": "Tricep Rope Pushdowns",
+      "muscle_group": "Triceps",
+      "sub_group": "Lateral Head",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Attach a rope to a high pulley and grasp it with both hands. Keep your elbows close to your sides as you extend your arms downward, then return to the starting position."
+    },
+    {
+      "id": 32,
+      "exercise_name": "Flutter Kicks",
+      "muscle_group": "Abs",
+      "sub_group": "Lower Abs",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
+      "instructions": "Lie on your back with your hands under your glutes for support. Lift your legs off the ground, keeping them straight, and flutter them up and down in a controlled motion."
+    },
+    {
+      "id": 34,
+      "exercise_name": "Leg Extensions",
+      "muscle_group": "Legs",
+      "sub_group": "Quadriceps",
+      "category": "Isolation",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Sit on a leg extension machine with your ankles behind the pad, and adjust the pad so it rests on your lower shins. Extend your legs until they are straight, then return to the starting position."
+    },
+    {
+      "id": 35,
+      "exercise_name": "Tricep Overhead Extension",
+      "muscle_group": "Triceps",
+      "sub_group": "Long Head",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJtosxJaRTsTuGeikdf5Oi3uykUPXCcs9uiw&s",
+      "instructions": "Hold a dumbbell or barbell overhead with both hands, elbows bent. Extend your arms upward until they are straight, then lower the weight behind your head by bending your elbows."
+    },
+    {
+      "id": 36,
+      "exercise_name": "Mountain Climbers",
+      "muscle_group": "Abs",
+      "sub_group": "Obliques",
+      "category": "Isolation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMS7DmhyWMxil1RjfFI0NP8PxaMwz7IxjY_g&s",
+      "instructions": "Assume a push-up position, then bring one knee towards your chest while keeping your other leg extended. Quickly switch legs, bringing the other knee towards your chest. Continue alternating legs in a running motion."
+    },
+    {
+      "id": 37,
+      "exercise_name": "Seated Cable Rows",
+      "muscle_group": "Back",
+      "sub_group": "Lats",
+      "category": "Isolation",
+      "image": "BACKURL",
+      "instructions": "Sit on a seated row machine with your knees slightly bent and feet braced against the footplate. Grasp the handles with an overhand grip, then pull them towards your lower chest, squeezing your shoulder blades together."
+    },
+    {
+      "id": 38,
+      "exercise_name": "Walking Lunges",
+      "muscle_group": "Legs",
+      "sub_group": "Glutes",
+      "category": "Compound",
+      "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
+      "instructions": "Stand with feet together, step forward with one foot and lower your body until both knees are bent at 90-degree angles. Push back up to the starting position and repeat with the other leg."
+    }
+  ]
 }
