@@ -33,16 +33,21 @@ const applyDeleteEventListener = (button, exercise) => {
 
 const exerciseToDom = (exercise) => {
   const createListItem = document.createElement('li')
-  createListItem.textContent = `${exercise.exercise_name}`
   createListItem.id=(`${exercise.id}`)
+  createListItem.classList.add('exercise-item')
   applyDetailsEventListener(createListItem, exercise)
+
+  const createP = document.createElement('p')
+  createP.textContent = `${exercise.exercise_name}`
+  createP.classList.add('exercise-name')
 
   const deleteButton = document.createElement('button')
   deleteButton.textContent = 'Delete'
   applyDeleteEventListener(deleteButton, exercise)
 
   exerciseList.push(exercise)
-  mainExerciseList.appendChild(createListItem).appendChild(deleteButton)
+  mainExerciseList.appendChild(createListItem).appendChild(createP)
+  createListItem.appendChild(deleteButton)
   filterExercises(exerciseList)
 }
 

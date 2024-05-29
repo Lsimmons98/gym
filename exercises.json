@@ -323,6 +323,96 @@
       "category": "Compound",
       "image": "https://images.squarespace-cdn.com/content/v1/537b0649e4b0f6c6b6877a35/1607948016856-YTYC2F8TRPJE2UTXLOM5/quads-glutes-hamstrings-calves.jpg",
       "instructions": "Stand with feet together, step forward with one foot and lower your body until both knees are bent at 90-degree angles. Push back up to the starting position and repeat with the other leg."
+    },
+    {
+      "id": 100,
+      "exercise_name": "Shoulder Press",
+      "muscle_group": "Shoulders",
+      "sub_group": "Front Deltoid",
+      "category": "Compound",
+      "image": "shoulderimg",
+      "instructions": "Sit on a bench with a back support, holding a dumbbell in each hand at shoulder height. Press the dumbbells up overhead until your arms are fully extended, then lower them back down to shoulder height."
+    },
+    {
+      "id": 101,
+      "exercise_name": "Lateral Raise",
+      "muscle_group": "Shoulders",
+      "sub_group": "Lateral Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Stand with a dumbbell in each hand at your sides. Keeping your arms straight, raise the dumbbells out to the sides until they are at shoulder height. Lower them back down slowly."
+    },
+    {
+      "id": 102,
+      "exercise_name": "Front Raise",
+      "muscle_group": "Shoulders",
+      "sub_group": "Front Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Stand with a dumbbell in each hand in front of your thighs. Keeping your arms straight, raise the dumbbells in front of you to shoulder height, then lower them back down slowly."
+    },
+    {
+      "id": 103,
+      "exercise_name": "Reverse Fly",
+      "muscle_group": "Shoulders",
+      "sub_group": "Rear Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Bend at the hips with a dumbbell in each hand, arms hanging down. Keeping a slight bend in your elbows, raise your arms out to the sides until they are in line with your body, then lower them back down."
+    },
+    {
+      "id": 104,
+      "exercise_name": "Arnold Press",
+      "muscle_group": "Shoulders",
+      "sub_group": "Front Deltoid",
+      "category": "Compound",
+      "image": "shoulderimg",
+      "instructions": "Sit on a bench with a back support, holding a dumbbell in each hand at shoulder height with palms facing you. Rotate your palms away from you as you press the dumbbells overhead, then reverse the motion to return to the start."
+    },
+    {
+      "id": 105,
+      "exercise_name": "Upright Row",
+      "muscle_group": "Shoulders",
+      "sub_group": "Lateral Deltoid",
+      "category": "Compound",
+      "image": "shoulderimg",
+      "instructions": "Stand holding a barbell or dumbbells in front of your thighs with palms facing your body. Lift the weight straight up to your chest, keeping your elbows higher than your wrists, then lower it back down."
+    },
+    {
+      "id": 106,
+      "exercise_name": "Face Pull",
+      "muscle_group": "Shoulders",
+      "sub_group": "Rear Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Attach a rope handle to a high pulley. Grasp the handles with both hands, pull the rope towards your face, keeping your elbows high, then return to the starting position."
+    },
+    {
+      "id": 107,
+      "exercise_name": "Bent-Over Lateral Raise",
+      "muscle_group": "Shoulders",
+      "sub_group": "Rear Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Bend at the waist with a dumbbell in each hand, arms hanging down. Keeping a slight bend in your elbows, raise the dumbbells out to the sides until they are in line with your body, then lower them back down."
+    },
+    {
+      "id": 108,
+      "exercise_name": "Cable Lateral Raise",
+      "muscle_group": "Shoulders",
+      "sub_group": "Lateral Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Stand next to a cable machine with the handle at the lowest position. Grasp the handle with your outside hand and raise your arm out to the side until it is at shoulder height, then lower it back down."
+    },
+    {
+      "id": 109,
+      "exercise_name": "Front Plate Raise",
+      "muscle_group": "Shoulders",
+      "sub_group": "Front Deltoid",
+      "category": "Isolation",
+      "image": "shoulderimg",
+      "instructions": "Stand holding a weight plate with both hands at your thighs. Keeping your arms straight, raise the plate in front of you to shoulder height, then lower it back down slowly."
     }
   ]
 }
