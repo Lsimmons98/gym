@@ -34,10 +34,10 @@ label {
 }
 
 select, input[type="text"], textarea {
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 5px;
   font-size: 16px;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid #444;
   color: #444;
   margin-bottom: 10px;
@@ -60,10 +60,11 @@ button:hover {
 }
 
 .flex-container {
+  gap: 20px;
   display: flex;
   justify-content: space-between;
   margin: 20px auto;
-  width: 80%;
+  width: 100%;
 }
 
 #searched-exercises, #exercise-details, #all-exercises {
@@ -72,14 +73,6 @@ button:hover {
   background-color: #8a8888;
   color: #fff;
   border-radius: 8px;
-}
-
-#searched-exercises {
-  margin-right: 10px;
-}
-
-#exercise-details {
-  margin-right: 10px; /* Add margin for consistency */
 }
 
 .exercise-item {
@@ -101,10 +94,10 @@ button:hover {
 
 #all-exercises {
   margin-top: 20px;
-  padding: 0 20px; /* Add padding on the sides */
-  background-color: #8a8888; /* Match background color */
-  color: #fff; /* Match text color */
-  border-radius: 8px; /* Match border radius */
+  padding: 0 20px;
+  background-color: #8a8888;
+  color: #fff;
+  border-radius: 8px;
 }
 
 #all-exercises h2 {
