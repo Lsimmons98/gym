@@ -70,9 +70,31 @@ button:hover {
   padding: 20px;
   background-color: #8a8888;
   color: #fff;
+  border-radius: 8px;
 }
 
 #searched-exercises h2,
 #all-exercises h2 {
   text-align: center;
+}
+
+#exercise-details {
+  display: flex;
+  margin: 20px auto;
+  width: 80%;
+  padding: 20px;
+  background-color: #8a8888;
+  color: #fff;
+  border-radius: 8px;
+}
+
+#exercise-details .info,
+#exercise-details .image {
+  flex: 1;
+  padding: 20px;
+}
+
+#exercise-details .image img {
+  max-width: 100%;
+  height: auto;
 }

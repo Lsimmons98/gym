@@ -3,8 +3,9 @@ const searchExercise = document.getElementById('exercise').value
 const mainExerciseList = document.getElementById('main-exercise-list')
 const searchExerciseList = document.getElementById('search-exercise-list')
 const searchTitle = document.getElementById('muscle-group-title')
+const exerciseImage = document.getElementById('image')
+const exerciseInfo = document.getElementById('info')
 let exerciseList = []
-
 
 const retrieveAllExercises = () => {
   fetch('http://localhost:3000/exercises')
@@ -19,13 +20,15 @@ const retrieveAllExercises = () => {
 const exerciseToDom = (exercise) => {
   const createListItem = document.createElement('li')
   createListItem.textContent = `${exercise.exercise_name}`
-
+  createListItem.addEventListener('click', (event) =>{
+    event.preventDefault()
+    moreDetailsToDOM(exercise)
+  })
   exerciseList.push(exercise)
   mainExerciseList.appendChild(createListItem)
 }
 
 retrieveAllExercises()
-
 
 const filterExercises = (array) => {
   const searchExercise = document.getElementById('exercise').value
@@ -46,3 +49,34 @@ exerciseForm.addEventListener('submit', (event) => {
   event.preventDefault()
   filterExercises(exerciseList)
 })
+
+
+//This function will add exercise info and image to the DOM (attach to event listener later)
+const moreDetailsToDOM = (exercise) => {
+  exerciseImage.innerHTML = ''
+  exerciseInfo.innerHTML = ''
+
+  const name = document.createElement('h1')
+  name.textContent = exercise.exercise_name
+
+  const muscleGroup = document.createElement('h3')
+  muscleGroup.textContent = `Muscle Group: ${exercise.muscle_group}`
+
+  const subGroup = document.createElement('h3')
+  subGroup.textContent = `Sub-Group: ${exercise.sub_group}`
+
+  const category = document.createElement('h3')
+  category.textContent = `Category: ${exercise.category}`
+
+  const instructions = document.createElement('p')
+  instructions.textContent = `Instructions: ${exercise.instructions}`
+
+  const image = document.createElement('img')
+  image.setAttribute('src', exercise.image)
+
+  exerciseInfo.appendChild(name).appendChild(muscleGroup)
+  name.appendChild(subGroup)
+  name.appendChild(category)
+  name.appendChild(instructions)
+  name.appendChild(image)
+}
