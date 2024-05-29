@@ -4,7 +4,17 @@ const mainExerciseList = document.getElementById('main-exercise-list')
 const searchExerciseList = document.getElementById('search-exercise-list')
 const searchTitle = document.getElementById('muscle-group-title')
 const exerciseInfo = document.getElementById('info')
+const newExerciseForm = document.getElementById('add-exercise-form')
 const newMuscleGroupBox = document.getElementById('new-muscle-group')
+const subGroupObject = {
+  'Chest': ['Upper Chest', 'Middle Chest', 'Lower Chest'],
+  'Back': ['Lats', 'Traps', 'Mid Back', 'Lower Back'],
+  'Legs': ['Quads', 'Hamstrings', 'Calves', 'Glutes'],
+  'Abs': ['Upper Abs', 'Lower Abs', 'Obliques'],
+  'Biceps': ['Long Head', 'Short Head', 'Brachialis'],
+  'Triceps': ['Long Head', 'Lateral Head', 'Medial Head'],
+  'Shoulders': ['Front Deltoid', 'Lateral Deltoid', 'Rear Deltoid']
+}
 let exerciseList = []
 
 const applyDetailsEventListener = (listItem, exercise) => {
@@ -96,22 +106,14 @@ const applySubGroups = () => {
   subGroupDropDown.innerHTML = ''
   subGroupDropDown.appendChild(blankOption)
 
-  const subGroupObject = {
-    'Chest': ['Upper Chest', 'Middle Chest', 'Lower Chest'],
-    'Back': ['Lats', 'Traps', 'Mid Back', 'Lower Back'],
-    'Legs': ['Quads', 'Hamstrings', 'Calves', 'Glutes'],
-    'Abs': ['Upper Abs', 'Lower Abs', 'Obliques'],
-    'Biceps': ['Long Head', 'Short Head', 'Brachialis'],
-    'Triceps': ['Long Head', 'Lateral Head', 'Medial Head'],
-    'Shoulders': ['Front Deltoid', 'Lateral Deltoid', 'Rear Deltoid']
-  }
-
+if(subGroupObject[newMuscleGroupValue]){
   subGroupObject[newMuscleGroupValue].forEach(subGroup => {
     const newOption = document.createElement('option')
     newOption.value = subGroup
     newOption.innerText = subGroup
     subGroupDropDown.appendChild(newOption)
   })
+}
 }
 
 newMuscleGroupBox.addEventListener('change', (event) => {
@@ -120,3 +122,31 @@ newMuscleGroupBox.addEventListener('change', (event) => {
 })
 
 applySubGroups()
+
+const createExercise = (event) => {
+  event.preventDefault()
+  const formData = {
+    "exercise_name": newExerciseForm.elements["new-exercise-name"].value,
+    "muscle_group": newExerciseForm.elements["new-muscle-group"].value,
+    "sub_group": newExerciseForm.elements["new-sub-group"].value,
+    "category": newExerciseForm.elements["new-category"].value,
+    "image": newExerciseForm.elements["new-image-url"].value,
+    "instructions": newExerciseForm.elements["new-instructions"].value,
+  };
+
+  const options = {
+    method: 'POST',
+    headers:
+      {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+    body: JSON.stringify(formData)
+  }
+
+  fetch('http://localhost:3000/exercises', options)
+    .then(resp => resp.json())
+    .then(exerciseToDom)
+}
+
+newExerciseForm.addEventListener('submit', createExercise)
