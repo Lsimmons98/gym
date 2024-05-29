@@ -49,13 +49,11 @@ const filterExercises = (array) => {
   })
 }
 
-exerciseForm.addEventListener('submit', (event) => {
+exerciseForm.addEventListener('change', (event) => {
   event.preventDefault()
   filterExercises(exerciseList)
 })
 
-
-//This function will add exercise info and image to the DOM (attach to event listener later)
 const moreDetailsToDOM = (exercise) => {
   exerciseImage.innerHTML = ''
   exerciseInfo.innerHTML = ''
