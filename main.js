@@ -118,3 +118,5 @@ newMuscleGroupBox.addEventListener('change', (event) => {
   event.preventDefault()
   applySubGroups()
 })
+
+applySubGroups()
