@@ -12,6 +12,7 @@
     <form id="exercise-form">
       <label for="exercise">Select an exercise:</label>
       <select name="exercise" id="exercise">
+        <option value="" disabled selected>Select an option</option>
         <option value ='Chest'>Chest</option>
         <option value='Back'>Back</option>
         <option value='Shoulders'>Shoulders</option>
@@ -20,12 +21,15 @@
         <option value='Biceps'>Biceps</option>
         <option value='Abs'>Abs</option>
       </select>
-      <button type="submit">Submit</button>
     </form>
   </div>
   <div id="searched-exercises">
     <h2 id="muscle-group-title"></h2>
     <ul id="search-exercise-list"></ul>
+  </div>
+  <div id="exercise-details">
+    <div id="info"></div>
+    <div id="image"></div>
   </div>
   <div id="all-exercises">
     <h2>All Exercises</h2>
