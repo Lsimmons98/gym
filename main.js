@@ -40,6 +40,10 @@ const filterExercises = (array) => {
   searchList.forEach(exercise => {
     const createListItem = document.createElement('li')
     createListItem.textContent = `${exercise.exercise_name}`
+    createListItem.addEventListener('click', (event) =>{
+      event.preventDefault()
+      moreDetailsToDOM(exercise)
+    })
 
     searchExerciseList.appendChild(createListItem)
   })
