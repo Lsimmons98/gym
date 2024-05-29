@@ -24,13 +24,25 @@ const applyDetailsEventListener = (listItem, exercise) => {
   })
 }
 
+const applyDeleteEventListener = (button, exercise) => {
+  button.addEventListener('click', (event) => {
+  event.preventDefault()
+  deleteExercise(exercise)
+  })
+}
+
 const exerciseToDom = (exercise) => {
   const createListItem = document.createElement('li')
   createListItem.textContent = `${exercise.exercise_name}`
+  createListItem.id=(`${exercise.id}`)
   applyDetailsEventListener(createListItem, exercise)
 
+  const deleteButton = document.createElement('button')
+  deleteButton.textContent = 'Delete'
+  applyDeleteEventListener(deleteButton, exercise)
+
   exerciseList.push(exercise)
-  mainExerciseList.appendChild(createListItem)
+  mainExerciseList.appendChild(createListItem).appendChild(deleteButton)
   filterExercises(exerciseList)
 }
 
@@ -150,3 +162,16 @@ const createExercise = (event) => {
 }
 
 newExerciseForm.addEventListener('submit', createExercise)
+
+const deleteExercise= (exercise) => {
+  const options = {
+    method: 'DELETE',
+    headers:
+    {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    }
+  }
+  fetch(`http://localhost:3000/exercises/${exercise.id}`, options)
+  .then(_resp => document.getElementById(exercise.id).remove())
+}
