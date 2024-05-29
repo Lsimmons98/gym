@@ -6,6 +6,6 @@ Feature 2: Click to Display Exercise Details
  - User Story: As a user, I want to be able to click an exercise to display more details about the exercise.
  - Details: Add a click event listener that will display a photo of the targeted muscle group and a brief description on how to perform the exercise
 
-Feature 3: MouseOver to display alternative exercises
- - User Story: As a user, I want to be able to mouseover a specific exercise to display possible alternatives to that exercise
- - Details: Ass a mouseover event listener on the exercise names which will show text alternative exercises.
+Feature 3: Add Exercise Form
+ - User Story: As a user, I want to be able to add exercises to the exercise list.
+ - Details: Add a form which will allow users to add exercises to the exercise list.
