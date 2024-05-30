@@ -225,11 +225,14 @@ const createRandomWorkout = (muscleGroup) => {
     const randomWorkoutMuscleGroup = document.getElementById('exercise').value
     randomWorkoutTitle.textContent = `Random ${randomWorkoutMuscleGroup} Workout`
 
+    if(subGroupExercises[getIndex]){
+
     const createListItem = document.createElement('li')
     createListItem.textContent = subGroupExercises[getIndex].exercise_name
     applyDetailsEventListener(createListItem, subGroupExercises[getIndex])
 
     randomWorkoutList.appendChild(createListItem)
+    }
   })
 }
 
