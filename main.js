@@ -138,11 +138,9 @@ const moreDetailsToDOM = (exercise) => {
   image.setAttribute('src', exercise.image)
 
   exerciseInfo.appendChild(name).appendChild(muscleGroup)
-  name.appendChild(subGroup)
-  name.appendChild(category)
-  name.appendChild(instructions)
-  name.appendChild(image)
+  name.append(subGroup, category, instructions, image)
 }
+
 const applySubGroups = () => {
   const newMuscleGroupValue = document.getElementById('new-muscle-group').value
   const subGroupDropDown = document.getElementById('new-sub-group')
@@ -155,7 +153,7 @@ const applySubGroups = () => {
   subGroupDropDown.innerHTML = ''
   subGroupDropDown.appendChild(blankOption)
 
-if(subGroupObject[newMuscleGroupValue]){
+  if(subGroupObject[newMuscleGroupValue]){
   subGroupObject[newMuscleGroupValue].forEach(subGroup => {
     const newOption = document.createElement('option')
     newOption.value = subGroup
@@ -214,8 +212,8 @@ const deleteExercise= (exercise) => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('exercise-form');
-  form.reset();
+  const searchMuscleGroup = document.getElementById('exercise-form')
+  searchMuscleGroup.reset()
 });
 
 const createRandomWorkout = (muscleGroup) => {
