@@ -2,10 +2,14 @@ const exerciseForm = document.getElementById('exercise-form')
 const searchExercise = document.getElementById('exercise').value
 const mainExerciseList = document.getElementById('main-exercise-list')
 const searchExerciseList = document.getElementById('search-exercise-list')
+const randomWorkoutList = document.getElementById('random-workout-list')
 const searchTitle = document.getElementById('muscle-group-title')
+const randomWorkoutTitle = document.getElementById('random-workout-title')
 const exerciseInfo = document.getElementById('info')
 const newExerciseForm = document.getElementById('add-exercise-form')
 const newMuscleGroupBox = document.getElementById('new-muscle-group')
+const searchedExerciseBox = document.getElementById('searched-exercises')
+const exerciseDetailsBox = document.getElementById('exercise-details')
 const subGroupObject = {
   'Chest': ['Upper Chest', 'Middle Chest', 'Lower Chest'],
   'Back': ['Lats', 'Traps', 'Mid Back', 'Lower Back'],
@@ -16,10 +20,14 @@ const subGroupObject = {
   'Shoulders': ['Front Deltoid', 'Lateral Deltoid', 'Rear Deltoid']
 }
 let exerciseList = []
+let searchList
 
 const applyDetailsEventListener = (listItem, exercise) => {
   listItem.addEventListener('click', (event) =>{
     event.preventDefault()
+    if (exerciseDetailsBox.classList.contains('hidden')){
+      exerciseDetailsBox.classList.remove('hidden')
+    }
     moreDetailsToDOM(exercise)
   })
 }
@@ -48,7 +56,6 @@ const exerciseToDom = (exercise) => {
   exerciseList.push(exercise)
   mainExerciseList.appendChild(createListItem).appendChild(createP)
   createListItem.appendChild(deleteButton)
-  filterExercises(exerciseList)
 }
 
 const retrieveAllExercises = () => {
@@ -69,19 +76,42 @@ const filterExercises = (array) => {
   searchTitle.textContent = `${searchExercise} Exercises`
   searchExerciseList.innerHTML = ''
 
-  const searchList = array.filter(exercise => exercise.muscle_group === searchExercise)
+  searchList = array.filter(exercise => exercise.muscle_group === searchExercise)
+
   searchList.forEach(exercise => {
     const createListItem = document.createElement('li')
     createListItem.textContent = `${exercise.exercise_name}`
     applyDetailsEventListener(createListItem, exercise)
 
-    searchExerciseList.appendChild(createListItem)
+  searchExerciseList.appendChild(createListItem)
   })
 }
 
 exerciseForm.addEventListener('change', (event) => {
   event.preventDefault()
+
+  const searchedExercise = document.getElementById('exercise').value
+
+  randomWorkoutTitle.innerHTML = ''
+  randomWorkoutList.innerHTML = ''
+
+  if (searchedExerciseBox.classList.contains('hidden')){
+    searchedExerciseBox.classList.remove('hidden')
+  }
+
   filterExercises(exerciseList)
+  if (document.getElementById('random-workout-button')){
+    document.getElementById('random-workout-button').remove()
+  }
+  const randomWorkoutButton = document.createElement('button')
+  randomWorkoutButton.id = 'random-workout-button'
+  randomWorkoutButton.textContent = `Click for a Random ${searchedExercise} Workout`
+  randomWorkoutButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    randomWorkoutList.innerHTML = ''
+    createRandomWorkout(searchedExercise)
+  })
+  searchedExerciseBox.appendChild(randomWorkoutButton)
 })
 
 const moreDetailsToDOM = (exercise) => {
@@ -179,4 +209,24 @@ const deleteExercise= (exercise) => {
   }
   fetch(`http://localhost:3000/exercises/${exercise.id}`, options)
   .then(_resp => document.getElementById(exercise.id).remove())
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('exercise-form');
+  form.reset();
+});
+
+const createRandomWorkout = (muscleGroup) => {
+
+  subGroupObject[muscleGroup].forEach(subGroup => {
+    const subGroupExercises = searchList.filter(exercise => exercise.sub_group === subGroup)
+    const getIndex = Math.floor(Math.random()*subGroupExercises.length)
+    const randomWorkoutMuscleGroup = document.getElementById('exercise').value
+    randomWorkoutTitle.textContent = `Random ${randomWorkoutMuscleGroup} Workout`
+
+    const createListItem = document.createElement('li')
+    createListItem.textContent = subGroupExercises[getIndex].exercise_name
+
+    randomWorkoutList.appendChild(createListItem)
+  })
 }
