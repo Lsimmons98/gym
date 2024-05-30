@@ -10,6 +10,8 @@ const newExerciseForm = document.getElementById('add-exercise-form')
 const newMuscleGroupBox = document.getElementById('new-muscle-group')
 const searchedExerciseBox = document.getElementById('searched-exercises')
 const exerciseDetailsBox = document.getElementById('exercise-details')
+const toggleAllExercisesButton = document.getElementById('toggle-all-exercises')
+const allExercisesDiv= document.getElementById('all-exercises')
 const subGroupObject = {
   'Chest': ['Upper Chest', 'Middle Chest', 'Lower Chest'],
   'Back': ['Lats', 'Traps', 'Mid Back', 'Lower Back'],
@@ -217,7 +219,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const createRandomWorkout = (muscleGroup) => {
-
   subGroupObject[muscleGroup].forEach(subGroup => {
     const subGroupExercises = searchList.filter(exercise => exercise.sub_group === subGroup)
     const getIndex = Math.floor(Math.random()*subGroupExercises.length)
@@ -226,7 +227,19 @@ const createRandomWorkout = (muscleGroup) => {
 
     const createListItem = document.createElement('li')
     createListItem.textContent = subGroupExercises[getIndex].exercise_name
+    applyDetailsEventListener(createListItem, subGroupExercises[getIndex])
 
     randomWorkoutList.appendChild(createListItem)
   })
 }
+
+toggleAllExercisesButton.addEventListener('click', (event) => {
+  event.preventDefault()
+  if(toggleAllExercisesButton.textContent === 'Show All Exercises'){
+    toggleAllExercisesButton.textContent = 'Hide Exercises List'
+    allExercisesDiv.classList.remove('hidden')
+  } else if (toggleAllExercisesButton.textContent === 'Hide Exercises List'){
+    toggleAllExercisesButton.textContent = 'Show All Exercises'
+    allExercisesDiv.classList.add('hidden')
+  }
+})
