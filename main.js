@@ -70,8 +70,6 @@ const retrieveAllExercises = () => {
   })
 }
 
-retrieveAllExercises()
-
 const filterExercises = (array) => {
   const searchExercise = document.getElementById('exercise').value
 
@@ -89,32 +87,34 @@ const filterExercises = (array) => {
   })
 }
 
-exerciseForm.addEventListener('change', (event) => {
-  event.preventDefault()
-
-  const searchedExercise = document.getElementById('exercise').value
-
-  randomWorkoutTitle.innerHTML = ''
-  randomWorkoutList.innerHTML = ''
-
-  if (searchedExerciseBox.classList.contains('hidden')){
-    searchedExerciseBox.classList.remove('hidden')
-  }
-
-  filterExercises(exerciseList)
-  if (document.getElementById('random-workout-button')){
-    document.getElementById('random-workout-button').remove()
-  }
-  const randomWorkoutButton = document.createElement('button')
-  randomWorkoutButton.id = 'random-workout-button'
-  randomWorkoutButton.textContent = `Click for a Random ${searchedExercise} Workout`
-  randomWorkoutButton.addEventListener('click', (event) => {
+const setupRandomExercises = () => {
+  exerciseForm.addEventListener('change', (event) => {
     event.preventDefault()
+
+    const searchedExercise = document.getElementById('exercise').value
+
+    randomWorkoutTitle.innerHTML = ''
     randomWorkoutList.innerHTML = ''
-    createRandomWorkout(searchedExercise)
+
+    if (searchedExerciseBox.classList.contains('hidden')){
+      searchedExerciseBox.classList.remove('hidden')
+    }
+
+    filterExercises(exerciseList)
+    if (document.getElementById('random-workout-button')){
+      document.getElementById('random-workout-button').remove()
+    }
+    const randomWorkoutButton = document.createElement('button')
+    randomWorkoutButton.id = 'random-workout-button'
+    randomWorkoutButton.textContent = `Click for a Random ${searchedExercise} Workout`
+    randomWorkoutButton.addEventListener('click', (event) => {
+      event.preventDefault()
+      randomWorkoutList.innerHTML = ''
+      createRandomWorkout(searchedExercise)
+    })
+    searchedExerciseBox.appendChild(randomWorkoutButton)
   })
-  searchedExerciseBox.appendChild(randomWorkoutButton)
-})
+}
 
 const moreDetailsToDOM = (exercise) => {
   exerciseInfo.innerHTML = ''
@@ -163,13 +163,6 @@ const applySubGroups = () => {
 }
 }
 
-newMuscleGroupBox.addEventListener('change', (event) => {
-  event.preventDefault()
-  applySubGroups()
-})
-
-applySubGroups()
-
 const createExercise = (event) => {
   event.preventDefault()
   const formData = {
@@ -196,8 +189,6 @@ const createExercise = (event) => {
     .then(exerciseToDom)
 }
 
-newExerciseForm.addEventListener('submit', createExercise)
-
 const deleteExercise= (exercise) => {
   const options = {
     method: 'DELETE',
@@ -210,11 +201,6 @@ const deleteExercise= (exercise) => {
   fetch(`http://localhost:3000/exercises/${exercise.id}`, options)
   .then(_resp => document.getElementById(exercise.id).remove())
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  const searchMuscleGroup = document.getElementById('exercise-form')
-  searchMuscleGroup.reset()
-});
 
 const createRandomWorkout = (muscleGroup) => {
   subGroupObject[muscleGroup].forEach(subGroup => {
@@ -234,6 +220,18 @@ const createRandomWorkout = (muscleGroup) => {
   })
 }
 
+retrieveAllExercises()
+setupRandomExercises()
+
+newMuscleGroupBox.addEventListener('change', (event) => {
+  event.preventDefault()
+  applySubGroups()
+})
+
+applySubGroups()
+
+newExerciseForm.addEventListener('submit', createExercise)
+
 toggleAllExercisesButton.addEventListener('click', (event) => {
   event.preventDefault()
   if(toggleAllExercisesButton.textContent === 'Show All Exercises'){
@@ -243,4 +241,9 @@ toggleAllExercisesButton.addEventListener('click', (event) => {
     toggleAllExercisesButton.textContent = 'Show All Exercises'
     allExercisesDiv.classList.add('hidden')
   }
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const searchMuscleGroup = document.getElementById('exercise-form')
+  searchMuscleGroup.reset()
 })
