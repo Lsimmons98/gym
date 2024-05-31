@@ -101,19 +101,24 @@ const setupRandomExercises = () => {
     }
 
     filterExercises(exerciseList)
-    if (document.getElementById('random-workout-button')){
-      document.getElementById('random-workout-button').remove()
-    }
-    const randomWorkoutButton = document.createElement('button')
-    randomWorkoutButton.id = 'random-workout-button'
-    randomWorkoutButton.textContent = `Click for a Random ${searchedExercise} Workout`
-    randomWorkoutButton.addEventListener('click', (event) => {
-      event.preventDefault()
-      randomWorkoutList.innerHTML = ''
-      createRandomWorkout(searchedExercise)
-    })
-    searchedExerciseBox.appendChild(randomWorkoutButton)
+
+    createDeleteButton(searchedExercise)
   })
+}
+
+const createDeleteButton = (exercise) => {
+if (document.getElementById('random-workout-button')){
+  document.getElementById('random-workout-button').remove()
+}
+const randomWorkoutButton = document.createElement('button')
+randomWorkoutButton.id = 'random-workout-button'
+randomWorkoutButton.textContent = `Click for a Random ${exercise} Workout`
+randomWorkoutButton.addEventListener('click', (event) => {
+  event.preventDefault()
+  randomWorkoutList.innerHTML = ''
+  createRandomWorkout(exercise)
+})
+searchedExerciseBox.appendChild(randomWorkoutButton)
 }
 
 const moreDetailsToDOM = (exercise) => {
@@ -220,28 +225,36 @@ const createRandomWorkout = (muscleGroup) => {
   })
 }
 
-retrieveAllExercises()
-setupRandomExercises()
+const newExerciseSubmitListener = () => {
+  newExerciseForm.addEventListener('submit', createExercise)
+  }
 
-newMuscleGroupBox.addEventListener('change', (event) => {
-  event.preventDefault()
-  applySubGroups()
-})
+const createMuscleSubGroups = () => {
+  newMuscleGroupBox.addEventListener('change', (event) => {
+    event.preventDefault()
+    applySubGroups()
+  })
+}
 
-applySubGroups()
-
-newExerciseForm.addEventListener('submit', createExercise)
-
-toggleAllExercisesButton.addEventListener('click', (event) => {
-  event.preventDefault()
-  if(toggleAllExercisesButton.textContent === 'Show All Exercises'){
-    toggleAllExercisesButton.textContent = 'Hide Exercises List'
-    allExercisesDiv.classList.remove('hidden')
-  } else if (toggleAllExercisesButton.textContent === 'Hide Exercises List'){
-    toggleAllExercisesButton.textContent = 'Show All Exercises'
-    allExercisesDiv.classList.add('hidden')
+const listenerForToggleAllExercises = () => {
+  toggleAllExercisesButton.addEventListener('click', (event) => {
+    event.preventDefault()
+    if(toggleAllExercisesButton.textContent === 'Show All Exercises'){
+      toggleAllExercisesButton.textContent = 'Hide Exercises List'
+      allExercisesDiv.classList.remove('hidden')
+    } else if (toggleAllExercisesButton.textContent === 'Hide Exercises List'){
+      toggleAllExercisesButton.textContent = 'Show All Exercises'
+      allExercisesDiv.classList.add('hidden')
   }
 })
+}
+
+retrieveAllExercises()
+createMuscleSubGroups()
+applySubGroups()
+setupRandomExercises()
+newExerciseSubmitListener()
+listenerForToggleAllExercises()
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchMuscleGroup = document.getElementById('exercise-form')
