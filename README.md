@@ -52,7 +52,7 @@ To set up this project locally, follow these steps:
 - `index.html`: The main HTML file containing the structure of the application.
 - `style.css`: The CSS file for styling the application.
 - `main.js`: The JavaScript file containing the functionality for fetching, displaying, and managing exercises.
-- `db.json`: The JSON file used by json-server to simulate a REST API with exercise data.
+- `exercises.json`: The JSON file used by json-server to simulate a REST API with exercise data.
 
 ## Usage
 
