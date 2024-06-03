@@ -204,6 +204,7 @@ const deleteExercise= (exercise) => {
     }
   }
   fetch(`http://localhost:3000/exercises/${exercise.id}`, options)
+
   .then(_resp => document.getElementById(exercise.id).remove())
 }
 
@@ -234,7 +235,7 @@ const createMuscleSubGroups = () => {
     event.preventDefault()
     applySubGroups()
   })
-}
+  }
 
 const listenerForToggleAllExercises = () => {
   toggleAllExercisesButton.addEventListener('click', (event) => {

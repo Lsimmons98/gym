@@ -12,4 +12,4 @@ Feature 3: Add New Exercise Form
 
  Feature 4: Generate Random Workout
   - User Story: As a user, I want to be able to generate random workouts for a specified muscle group with the click of a button
-  - Details: Add a button which will trigger a function that randomly chooses an exercises with each of the relevant subgroups and appends them to the DOM
+  - Details: Add a button which will trigger a function that randomly chooses an exercises with each of the relevant subgroups and appends them to the DOM.
