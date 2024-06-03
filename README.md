@@ -40,7 +40,7 @@ To set up this project locally, follow these steps:
 3. **Start the local server:**
 
     ```bash
-    json-server --watch db.json --port 3000
+    json-server --watch exercises.json --port 3000
     ```
 
 4. **Open the project in your browser:**
